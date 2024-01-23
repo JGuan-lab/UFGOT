@@ -4,7 +4,7 @@ Alignment of two data can be achieved using the ufgot function in solver.py,wher
 from slover import ufgot
 from eval import foscttm
 X_alig, Y = x_alig,y = ufgot(X, Y, fiter='g1', split=True)
-foscttm(x_alig, y)
+foscttm(X_alig, Y)
 ```
 Use the UFGOT_cancer function in solver.py to implement aligned ensemble cluster analysis of cancer subtype data. The parameter cancer is used to select the cancer data set for the experiment. If the data set provides real labels, the parameter k is the number of categories. This function returns aligned CNV, Methy, miRNA data and target alignment data mRNA as well as 11 combined clustering results. The code provides a set of alignment parameters for the trained COAD data set, which can be used directly without training.
 ```
