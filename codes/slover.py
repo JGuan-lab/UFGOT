@@ -339,7 +339,6 @@ def cluster_nolabel(CNV, Methy, miRNA, mRNA):
         Methy = cg.fit_transform(Methy)
         miRNA = cg.fit_transform(miRNA)
         mRNA = cg.fit_transform(mRNA)
-        mRNA = cg.fit_transform(mRNA)
         totalresult = []
         X = np.hstack((CNV, Methy))
         models = [GaussianMixture(n_components=i, random_state=233, covariance_type='full').fit(X) for i in range(2, 8)]
